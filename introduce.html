@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="design.css">
+  <style>
+    img{
+      width: 480px;
+      height: 360px;
+    }
+    div{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    #left, #right{
+      padding-top: 200px;
+    }
+    #left{
+      padding-left: 200px;
+    }
+    #right{
+      padding-right: 200px;
+    }
+    @media(max-width:1380px)
+    {
+      #left, #right{
+        display: none;
+      }
+    }
+    @media(min-width:1000px)
+    {
+      .mixture{
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img id="right" src="https://i.ytimg.com/vi/HZbcAkjtnlM/hqdefault.jpg">
+    <img id="left" src="https://thumbs.dreamstime.com/b/carbonic-acid-molecule-icon-carbonic-acid-molecule-icon-white-background-vector-illustration-168980239.jpg">
+    <a href="list.html"><img class="mixture" src="https://www.sigmaaldrich.com/content/dam/sigma-aldrich/structure6/139/mfcd00010906.eps/_jcr_content/renditions/mfcd00010906-medium.png"></a>
+    <a href = "https://javalab.org/neutralization_reaction_model/"><img class="mixture" src="https://image.flaticon.com/icons/png/512/1373/1373940.png"></a>
+  </div>
+</body>
+</html>
